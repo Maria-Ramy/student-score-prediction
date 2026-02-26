@@ -8,7 +8,8 @@ from sklearn.linear_model import LinearRegression, Ridge, Lasso
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 from sklearn.pipeline import Pipeline
 import warnings
-
+import os
+os.makedirs('results', exist_ok=True)
 warnings.filterwarnings('ignore')
 
 # Set style for better visualizations
